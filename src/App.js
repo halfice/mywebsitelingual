@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from "./header/header";
+import { Header } from "./header/header";
 import Footer from "./footer/footer";
 import Bodycards from "./bodycards";
 import Container from 'react-bootstrap/Container'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div className="row"><Header /></div>
-
+      <br></br>
       <div className="row">
         <div className="col-sm-4"><Bodycards /></div>
         <div className="col-sm-4"><Bodycards /></div>

@@ -20,46 +20,72 @@ import {
   faSquare,
   faCheckSquare
 } from '@fortawesome/free-solid-svg-icons'
-function Header() {
-  return (
-    <div>
-      <div className="container-fluid headermaindiv">
-        <div className="row">
-          <div className="col-sm-4">
-            <div>
-              <img src={logoheader} />
+import BeautyStars from "beauty-stars";
+
+export class Header extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 2,
+    }
+  }
+  shoonChangewsp() {
+    this.setState({
+      value: 4
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="container-fluid headermaindiv">
+          <div className="row">
+            <div className="col-sm-4">
+              <div>
+                <img src={logoheader} />
+              </div></div>
+            <div className="col-sm-4"><div className="mansearch">
+              <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search mates"></input>
+
             </div></div>
-          <div className="col-sm-4"><div className="mansearch">
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search mates"></input>
 
-          </div></div>
+            <div className="col-sm-4">
+              <div className="row">
 
-          <div className="col-sm-4">
-            <div className="row">
-           
-              <div className="col-sm-2">  <div className="whitecolorcss" > <FontAwesomeIcon icon={faHome} /></div></div>
-              <div className="col-sm-2">                <div className="whitecolorcss"> <FontAwesomeIcon icon={faCoffee} /></div> </div>
-              <div className="col-sm-2">                
-               <div className="whitecolorcss"> <FontAwesomeIcon icon={faQuoteLeft} /></div>
-</div>
-<div className="col-sm-6"></div>
-               
+                <div className="col-sm-2">  <div className="whitecolorcss" > <FontAwesomeIcon icon={faHome} /></div></div>
+                <div className="col-sm-2">                <div className="whitecolorcss"> <FontAwesomeIcon icon={faCoffee} /></div> </div>
+                <div className="col-sm-2">
+                  <div className="whitecolorcss"> <FontAwesomeIcon icon={faQuoteLeft} /></div>
+                </div>
+                <div className="col-sm-6"></div>
 
-             
+
+
+              </div>
+
             </div>
-
           </div>
         </div>
-      </div>
 
-      <br></br>
-
-      <div className="">
-        <div className="ratingdiv">
-          <h3>Number 1 rating</h3>
+        <br></br><br></br>
+        <div className="container-fluid ratingdiv">
+        <div className="row">
+          <div className="col-sm-4">
+            
+          </div>
+          <div className="col-sm-4">
+              <BeautyStars
+                value={this.state.value}
+                onChange={value => this.setState({ value })}
+              />
+          </div>
+          <div className="col-sm-4"></div>
+        </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
+
 }
-export default Header;
+
