@@ -83,6 +83,8 @@ export class Header extends React.Component {
           <div className="col-sm-4"></div>
         </div>
         </div>
+
+        <div></div>
       </div>
     );
   }
