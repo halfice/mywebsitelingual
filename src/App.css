@@ -9,6 +9,17 @@
   width:100%;
 }
 
+@media screen and (max-width: 600px) {
+  .hideonmobile {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
 .spanclasstext{
   font-size: 22px;
   font-weight: bold;
@@ -49,7 +60,7 @@
   -webkit-box-sizing:border-box; /* Safari */
  }
 .ratingdiv{
-  padding-top: 43px;
+  padding-top: 13px;
     background-color: #8080802e;
     width: 100%;
     position: absolute;
@@ -69,10 +80,10 @@
 .headermaindiv{
   background-color: #2f3a4a;
     display: block;
-    height: 100px;
-    position: fixed;
+   padding:0px!important;
+    
     text-align: center;
-    top: 0;
+   
     width: 100%;
     z-index: 200
 }

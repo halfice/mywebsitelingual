@@ -5,7 +5,7 @@ import { Header } from "./header/header";
 import Footer from "./footer/footer";
 import Bodycards from "./bodycards";
 import Loginsecion from './loginsecion'
-
+import { Rating } from "./rating";
 import Looking from './lookingforroom';
 import RoomOwner from './roomowner';
 import Container from 'react-bootstrap/Container'
@@ -24,6 +24,7 @@ class App extends Component {
     this.state = {
       needwizard: 0,
       ownerwizard:0,
+      
     }
    
   }
@@ -61,8 +62,12 @@ class App extends Component {
       <div className="App">
 
 
-        <div className="row"><Header /></div>
-
+        <div className=""><Header handler = {this.handler} /></div>
+        
+        { this.state.needwizard == 0 && this.state.ownerwizard==0 && 
+          <div className=""><Rating handler = {this.handler} /></div>
+        }
+        
 
 
 

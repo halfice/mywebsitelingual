@@ -11,6 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTumblr, faTwitter } from '@fortawesome/free-solid-svg-icons'
+import Carousel from 'react-bootstrap/Carousel'
+
 import {
   faCoffee,
   faCog,
@@ -40,8 +42,13 @@ export class lookingoforroom extends React.Component {
   render() {
     return (
       <div>
-       <h1>Wizard for looking for flat mate</h1>
-        </div>
+    
+      
+      
+        
+      </div>
+
+
 
       
       

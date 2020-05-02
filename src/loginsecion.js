@@ -23,7 +23,7 @@ class Loginsecion extends Component {
                       <span className="spanclasstext">I need flatmate</span>
                     </div>
                     <div className="row marginleft">
-                      <p>Share your potential flatmates to find you.
+                      <p>Share your potential flatmates find.
   
                       </p>
                     </div>
