@@ -76,6 +76,9 @@
   padding: 11px;
 }
 
+.dontshow{
+  display: none;
+}
 
 .headermaindiv{
   background-color: #2f3a4a;

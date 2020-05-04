@@ -8,3 +8,17 @@
     opacity: 0;
     transition: visibility 12s 5s, opacity 5s linear;
   }
+
+  .iconsclass{
+    font-size: 44px;
+    color: gray;
+  }
+
+  .centeraligh{
+    display: inline-block!important;
+  }
+
+  .subheadings{
+    font-size: 33px;
+    color: gray;
+  }

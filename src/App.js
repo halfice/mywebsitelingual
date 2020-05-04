@@ -23,24 +23,24 @@ class App extends Component {
     super(props);
     this.state = {
       needwizard: 0,
-      ownerwizard:0,
-      
+      ownerwizard: 0,
+
     }
-   
+
   }
 
-  
+
 
 
   handler = (val) => {
-  
+
     this.setState({
       needwizard: val
     })
   }
 
   handlertwo = (val) => {
-  
+
     this.setState({
       ownerwizard: val
     })
@@ -62,45 +62,45 @@ class App extends Component {
       <div className="App">
 
 
-        <div className=""><Header handler = {this.handler} /></div>
-        
-        { this.state.needwizard == 0 && this.state.ownerwizard==0 && 
-          <div className=""><Rating handler = {this.handler} /></div>
+        <div className=""><Header handler={this.handler} /></div>
+
+        {this.state.needwizard == 0 && this.state.ownerwizard == 0 &&
+          <div className=""><Rating handler={this.handler} /></div>
         }
-        
+
 
 
 
         <br></br>
-        {this.state.needwizard == 0 &&  
-        <div>
-           <div className="row"><Loginsecion handler = {this.handler} /></div>
-          </div>
+        {this.state.needwizard == 0 &&
+
+          <div className="row"><Loginsecion handler={this.handler} /></div>
+
         }
-       
-       {this.state.needwizard == 1 &&  
-        <div>
-           <div className="row"><Looking  /></div>
-          </div>
+
+        {this.state.needwizard == 1 &&
+
+          <div className="col-sm-12"><Looking /></div>
+
         }
 
         <div className="row">
-        {
-        this.state.needwizard ==0 && 
-        <div>
-          <div className="col-sm-12"><Bodycards   /></div>
-          </div>
+          {
+            this.state.needwizard == 0 &&
+
+            <div className="col-sm-12"><Bodycards /></div>
+
           }
 
-{
-        this.state.needwizard ==3 && 
-        <div>
-          <div className="col-sm-12"><RoomOwner   /></div>
-          </div>
+          {
+            this.state.needwizard == 3 &&
+
+            <div className="col-sm-12"><RoomOwner /></div>
+
           }
 
         </div>
-        <div>
+        <div className="dontshow" > 
           <p>{t('Thanks.1')}</p>  <p>{t('Why.1')}</p>
           {somthingNeedsTobe === "rtl" ?
             t('Position1') :
